@@ -1,0 +1,56 @@
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Sliders were being annoying af */
+.container {
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-140%, -50%);
+}
+
+/* center everything nicely */
+h1, h2 {
+    text-align: center;
+    position: relative;
+}
+
+h4 {
+    text-align: center;
+    border-style: solid;
+    position: relative;
+}
+
+canvas {
+    border-style: solid;
+    display: block;
+    margin: 20;
+    margin-top: 60;
+}  

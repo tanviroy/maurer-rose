@@ -1,0 +1,40 @@
+<!--DOCTYPE HTML-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Maurer Roses </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO">
+</head>
+
+<body>
+
+    <h1>Maurer Roses!</h1>
+    <h4>A rose in mathematics is a sinusoid plotted in polar coordinates. The Maurer Rose is a special rose defined by r = sin(nθ), consisting of 360 lines that connect 361 points. The coordinates can be expressed as (sin(nd), d) where 'n' determines the petals/spokes and 'd' represents the angle in degrees. Check out https://en.wikipedia.org/wiki/Rose_(mathematics) for more information.</h4>
+
+    <h2>Create your own rose with the given sliders, you might be surprised with what you get:</h2>
+ 
+    <div class="split left">
+	  <div class="centered">
+	  	<canvas id="canvas"></canvas>
+	  </div>
+	</div>
+
+	<div class="split right">
+		<h1 id="text" style="padding-top: 150; padding-right: 225"></h1>
+		<div class="container">
+
+		    <h2>Spikes N:</h2>
+			<input type="range" min="1" max="360" placeholder="Value from 1-360" class="range" id="n">
+
+			<h2>Degrees D:</h2>
+			<input type="range" min="1" max="360" placeholder="Value from 1-360" class="range" id="d">
+		</div>
+	</div>
+    
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
